@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Execise_Lession1</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,101 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      
+
+    <!-- Bài 1: Tính tiền lương nhân viên -->
+    <div class="form-group container py-5">
+        <h4>Bài 1: Tính tiền lương nhân viên</h4>
+        <div class="form-group">
+          <label for="wage">Tiền lương 1 ngày:</label>
+          <input id="wage" class="form-control w-25" type="number" placeholder="Nhập vào tiền lương 1 ngày">
+        </div>
+        <div class="form-group">
+          <label for="workDay">Số ngày làm:</label>
+          <input id="workDay" class="form-control w-25" type="number" placeholder="Nhập vào số ngày làm">
+        </div>
+        <button id="btnTotalSalary" class="btn btn-success">Tính tiền lương</button>
+        <div class="mt-2 alert alert-success w-25">
+          Kết quả: <span id="totalSalary"></span>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Bài 2: Tính giá trị trung bình -->
+    <div class="form-group container py-5">
+      <h4>Bài 2: Tính giá trị trung bình</h4>
+      <div class="form-group">
+        <label for="realNumber1">Số thực 1:</label>
+        <input id="realNumber1" class="form-control w-25" type="number" placeholder="Nhập vào số thực">
+      </div>
+      <div class="form-group">
+        <label for="realNumber2">Số thực 2:</label>
+        <input id="realNumber2" class="form-control w-25" type="number" placeholder="Nhập vào số thực">
+      </div>
+      <div class="form-group">
+        <label for="realNumber3">Số thực 3:</label>
+        <input id="realNumber3" class="form-control w-25" type="number" placeholder="Nhập vào số thực">
+      </div>
+      <div class="form-group">
+        <label for="realNumber4">Số thực 4:</label>
+        <input id="realNumber4" class="form-control w-25" type="number" placeholder="Nhập vào số thực">
+      </div>
+      <div class="form-group">
+        <label for="realNumber5">Số thực 5:</label>
+        <input id="realNumber5" class="form-control w-25" type="number" placeholder="Nhập vào số thực">
+      </div>
+      <button id="btnAverage" class="btn btn-success">Tính trung bình</button>
+      <div class="mt-2 alert alert-success w-25">
+        Kết quả: <span id="average"></span>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Bài 3: Quy đổi tiền -->
+    <div class="form-group container py-5">
+      <h4>Bài 3: Quy đổi tiền</h4>
+      <div class="form-group">
+        <label for="usdSwap">Nhập số USD:</label>
+        <input class="form-control w-25" type="number" id="usdSwap" placeholder="Nhập số USD cần đổi">
+      </div>
+      <button id="btnSwap" class="btn btn-success">Quy đổi</button>
+      <div id="result" class="mt-2 alert alert-success w-25" style="display: none;">
+        <span id="vnd"></span>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Bài 4: Tính chu vi, diện tích HCN -->
+    <div class="form-group container py-5">
+      <h4>Bài 4: Tính chu vi, diện tích HCN</h4>
+      <div class="form-group">
+        <label for="rectangleLength">Chiều dài:</label>
+        <input class="form-control w-25" type="number" id="rectangleLength" placeholder="Nhập chiều dài">
+      </div>
+      <div class="form-group">
+        <label for="rectangleWidth">Chiều rộng:</label>
+        <input class="form-control w-25" type="number" id="rectangleWidth" placeholder="Nhập chiều rộng">
+      </div>
+      <button id="btnCalculate" class="btn btn-success">Tính</button>
+      <div class="mt-2 alert alert-success w-25">
+        Chu vi: <span id="circumference"></span>
+        <br>
+        Diện tích: <span id="area"></span>
+      </div>
+    </div>
+
+    <!-- Bài 5: Tính tổng 2 ký số -->
+    <div class="form-group container py-5">
+      <h4>Bài 5: Tính tổng 2 ký số</h4>
+      <div class="form-group">
+        <label for="twoNumbers">Nhập số:</label>
+        <input class="form-control w-25" type="number" placeholder="Nhập 2 chữ số" id="twoNumbers">
+      </div>
+      <button id="btn2Numbers" class="btn btn-success">Tính ký số</button>
+      <div class="mt-2 alert alert-success w-25">
+        Kết quả: <span id="sum2Numbers"></span>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
