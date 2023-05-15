@@ -16,6 +16,7 @@ document.getElementById('btnTotalSalary').onclick = function () {
     // process
     var totalSalary = wage * workDay;
     // output
+    document.getElementById('resultDiv1').style.display = 'block';
     document.getElementById('totalSalary').innerHTML = new Intl.NumberFormat('vn-VN').format(totalSalary);
 }
 // ========== ========== ==========
@@ -40,6 +41,7 @@ document.getElementById('btnAverage').onclick = function () {
     // process
     var average = (realNumber1 +  realNumber2 + realNumber3 + realNumber4 + realNumber5) / 5;
     // output 
+    document.getElementById('resultDiv2').style.display = 'block';
     document.getElementById('average').innerHTML = average;
 }
 // ========== ========== ==========
@@ -59,8 +61,7 @@ document.getElementById('btnSwap').onclick = function () {
     // process
     var vnd = usdSwap * 23500;
     // output
-    var result = document.getElementById('result');
-    result.style.display = 'block';
+    document.getElementById('resultDiv3').style.display = 'block';
     document.getElementById('vnd').innerHTML = new Intl.NumberFormat('vn-VN').format(vnd) + ' VND';
 }
 // ========== ========== ==========
@@ -83,6 +84,7 @@ document.getElementById('btnCalculate').onclick = function () {
     var circumference = (rectangleLength + rectangleWidth) * 2;
     var area = rectangleLength * rectangleWidth;
     // output
+    document.getElementById('resultDiv4').style.display = 'block';
     document.getElementById('circumference').innerHTML = circumference;
     document.getElementById('area').innerHTML = area;
 }
@@ -107,5 +109,6 @@ document.getElementById('btn2Numbers').onclick = function () {
     var secondNumber = twoNumbers % 10;
     var sum2Numbers = firstNumber + secondNumber;
     // output
+    document.getElementById('resultDiv5').style.display = 'block';
     document.getElementById('sum2Numbers').innerHTML = sum2Numbers;
 }
